@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>McGill Tech Fair</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+
+        function movetolink(obj) {
+
+            var scrollpos = $("#"+obj).position();
+
+
+            var scrollpos1 = scrollpos.top;
+            $("body").animate({ scrollTop: scrollpos1 }, "slow");
+
+            if (screensize < 800) {
+
+                $('.navbar-toggle').click();
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">TF</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="employers.html">Employers</a></li>
+
+                <li class="active"><a href="students.html">Students</a></li>
+                        <li><a onclick="movetolink('why')">Why Attend</a></li>
+                        <li><a onclick="movetolink('howToPrepare')">How to Prepare</a></li>
+                        <li><a onclick="movetolink('vol')">Volunteering</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div id="why">
+        <h1>Why Should You Attend?</h1>
+
+        <h5>The McGill University Engineering and Technology Career Fair provides an excellent occasion for you, McGill students and recent graduates, to network with industry representatives and find out about jobs and internships.
+            <br>
+            By visiting company booths, you can:</h5>
+        <br>
+        <ul>
+            <li> Network with potential employers</li>
+            <li>Investigate and research career options</li>
+            <li>Obtain information from employers on</li>
+            <li>Career opportunities</li>
+            <li>Education requirements</li>
+            <li>Salary expectations</li>
+            <li>Corporate cultures</li>
+            <li>Job requirements</li>
+            <li>Industry growth</li>
+            <li>Industry trends</li>
+            <li>Skills and qualifications</li>
+        </ul>
+
+
+        <h4>The McGill Techfair is open to current McGill students and alumni only. To enter the TechFair venue, you need to show:
+
+            A valid McGill student ID card, or
+            A photo ID and McGill student number (for alumni without a McGill ID card).
+            Access is free for students and alumni.</h4>
+    </div>
+    <div id="howToPrepare">
+        <h1>Preparing for the TechFair</h1>
+        <h4>There are a lot of things that you can do to prepare for meeting a potential employer. Here are a few suggestions.</h4>
+
+        <h5>Before you go to the TechFair make sure that you:</h5>
+        <ul>
+            <li>Visit the Engineering Career Centre for assistance in preparing for theTech Fair (You can also download our TechFair Tips handout). Students from other faculties can visit their respective career centres (full list available at http://www.mcgill.ca/caps/other-centres/).</li>
+            <li>Download the Techfair Mobile APP to research the employers that will be participating or view employer profiles through myFuture.</li>
+            <li>Decide on employers that you want to target when at the TechFair</li>
+            <li>Prepare a list of questions to ask the employers</li>
+        </ul>
+        <h5>When you go to the TechFair make sure that you:</h5>
+        <ul>
+            <li>Dress and conduct yourself professionally</li>
+            <li>Exude enthusiasm and self-confidence</li>
+            <li>Stay positive</li>
+        </ul>
+        <h5>Take advantage of this opportunity to obtain first-hand information about careers which interest you. Consider asking the following questions:</h5>
+        <ul>
+            <li>What types of jobs does your company/organization have for university and college graduates?</li>
+            <li>What academic background (major, program, courses) will be most helpful to me in preparing to enter this field?</li>
+            <li>What kind of work experience, either part-time or internship, will be helpful to me?</li>
+            <li>Are there internship opportunities in this field?</li>
+            <li>What are typical entry-level positions in this field? What duties and responsibilities do these positions entail?</li>
+            <li>How important is having "relevant" work experience when being considered for employment?</li>
+            <li> What is the employment outlook in this field in the next 5 - 10 years?</li>
+            <li>What are the opportunities and alternatives for career advancement?</li>
+            <li>Would having a Master's or PhD degree be an advantage or disadvantage in obtaining a job with your company/organization?</li>
+            <li>Are there extracurricular activities I can pursue which will help me prepare for this field?</li>
+            <li>Does your company have training programs for its employees?</li>
+            <li>What kind of salary can I expect in an entry-level position? How does your company/organization determine salary increases?</li>
+            <li>What criteria does your company/organization use to assess candidates during interviews?</li>
+            <li> Are there individuals in your company/organization who are willing to discuss their careers in more detail with me?</li>
+            <li>What advice do you have for a university or college graduate entering this field?</li>
+        </ul>
+
+        <h3>You can also attend one of our TechFair Tips workshops – for schedule of all workshops, log on to myFuture and select Events/Workshops.</h3>
+    </div>
+    <div id="vol">
+        <h1>Volunteers</h1>
+        <h3>We are seeking volunteers for Fall 2017 TechFair, register below.</h3>
+
+
+        <h4>Quick Links</h4>
+        <h5>Click here to register as a volunteer.
+            Make sure to include your name, year, email (separated by commas), and check all time slots that you are available.
+
+
+            Important notes:</h5>
+
+        Only McGill students and alumni are eligible to attend or volunteer.
+        You will need to show a valid McGill student ID card or a photo ID with McGill student number to be given access to the venue
+        No food, drinks, coats or backpacks are allowed at the Techfair venue.
+        Volunteer meeting is onTBC. This meeting is mandatory and all students are required to attend it!
+    </div>
+</div>
+</body>
+</html>
