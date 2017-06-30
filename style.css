@@ -61,7 +61,7 @@ body{
 }
 .section2
 {
-    background-color: white;
+    background-color: whitesmoke;
 }
 .glyphicon-eject{
     padding:13px;
@@ -229,4 +229,72 @@ nav {
     text-shadow: 1px 1px 0.5em #000;
     color: #fff;
 
+}
+.card{
+    position: relative;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    box-shadow: 3px 3px 3px #888888;
+    border-radius: 2px;
+    padding: 0;
+}
+.cardText{
+    padding: 24px;
+    border-radius: 0 0 2px 2px;
+    border-left:1.5px solid #BE4157;
+
+}
+.cardImage{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.cardHead{
+    position: absolute;
+    top: 200px;
+}
+.cardAction {
+    text-align: center;
+    padding: 10px;
+    border-top: .5px solid #e6e6e6;
+}
+.boxText{
+    background: white;
+    box-shadow: 3px 3px 3px #888888;
+    border-left:1.5px solid #BE4157;
+    padding: 5px;
+}
+
+.boxImage:hover{
+}
+.boxImage{
+    padding-right: 0;
+    padding-left:0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.conti:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
