@@ -10,4 +10,3 @@ Upcoming website for the semi-annual McGill Tech Fair!
 * Javascript
 * Bootstrap
 
-### Wait for it
