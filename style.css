@@ -1,4 +1,4 @@
-.section-home{
+col-sm-12.section-home{
     background-color: white;
     border-width: 2px; border-color: black;border-style: solid;
 }
@@ -29,9 +29,9 @@ box-shadow: 1px 1px 1px 1px #777;
 {
     transform:scale(1.1);
 }*/
-body{
+body {
+    /*font-family: 'Roboto'; font-size: 20px;*/
     background-color: #e6e6e6;
-
 }
 .navbar
 {
@@ -66,7 +66,7 @@ body{
     background-color: whitesmoke;
 }
 .glyphicon-eject{
-    padding:13px;
+    padding:10px;
     color: white;
 }
 /*body {
@@ -93,6 +93,109 @@ nav {
     padding: 24px 10px;
     cursor: pointer;
 }}*/
+
+  /* Partners Carousel */
+  .b-carousel-arr-out .bx-prev {
+    left: -40px; }
+  .b-carousel-arr-out .bx-next {
+    right: -40px; }
+
+  /* - bx slider arr out style*/
+  /* + bx slider small arr*/
+  .b-carousel-small-arr .bx-controls-direction a {
+    background: 0 none;
+    font-family: "FontAwesome";
+    font-size: 24px;
+    color: #989898;
+    width: 10px; }
+    .b-carousel-small-arr .bx-controls-direction a:hover {
+      color: #f34a53; }
+    .b-carousel-small-arr .bx-controls-direction a:before {
+      position: absolute;
+      left: 0;
+      text-indent: 0; }
+  .b-carousel-small-arr .bx-prev:before {
+    content: "\f104"; }
+  .b-carousel-small-arr .bx-next:before {
+    content: "\f105"; }
+
+  #over{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+
+  .b-logo-group {
+  margin: 10px 2px; }
+
+  @media screen and (max-width: 100px) {
+    .f-center--xs {
+      text-align: center; } }
+
+      .f-center {
+        text-align: center;
+      display: inline-block; }
+
+
+      .b-logo-group {
+        margin: 10px 4px; }
+
+      .b-logo-item {
+        display: inline-block;
+        vertical-align: middle; }
+        .b-logo-item a {
+          padding: 14px 14px;
+          min-height: 75px;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 20px;
+          width: 202px;
+          text-align: center;
+          margin-bottom: 0px; }
+          .b-logo-item a:hover {
+            background: white;
+            box-shadow: 0 0 2px #dddddd; }
+            .b-logo-item a:hover .is-hover {
+              display: inline-block; }
+            .b-logo-item a:hover .is-normal {
+              display: none; }
+        .b-logo-item img {
+          display: inline-block;
+          max-width: 100%; }
+          .b-logo-item img.is-hover {
+            display: none; }
+
+            .b-carousel-small-arr .bx-controls-direction a {
+              background: 0 none;
+              font-family: "FontAwesome";
+              font-size: 24px;
+              color: #989898;
+              width: 10px; }
+              .b-carousel-small-arr .bx-controls-direction a:hover {
+                color: #f34a53; }
+              .b-carousel-small-arr .bx-controls-direction a:before {
+                position: absolute;
+                left: 0;
+                text-indent: 0; }
+            .b-carousel-small-arr .bx-prev:before {
+              content: "\f104"; }
+            .b-carousel-small-arr .bx-next:before {
+              content: "\f105"; }
+
+              #button{
+                  height:50px;
+                  width:100px;
+                  margin: -20px -40px;
+                  position:relative;
+                  top:50%;
+                  left:50%;
+              }
+              button{
+    margin: 0 auto;
+}
+
+
 
 .hvr-underline-from-center {
     display: inline-block;
@@ -131,7 +234,7 @@ nav {
     color: white;
 }
 .container{
-    padding: 65px;
+    padding: 40px;
 }
 #copyright{
     text-align: center;
@@ -177,7 +280,7 @@ nav {
     height: 110px;
     width: 110px;
     margin: 3px;
-    font-size: 2em;
+    font-size: 3em;
     border-radius: 100%;
     line-height: 110px;
     text-align: center;
@@ -200,7 +303,7 @@ nav {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -306,9 +409,9 @@ nav {
 
 .text {
     color: white;
-    font-size: 20px;
+    font-size: 100px;
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
